@@ -1,0 +1,253 @@
+/* creating animations */
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.4;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    font-style: normal;
+}
+.about-us, .our-programs, .card, .ourmissions, .joinus{
+    animation: appear 0.1s ease-out;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #eff6e0;
+    font-family: made tommy;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+.nav-container{
+    display: flex;
+    background-color: #01161e;
+    /* color: ; */
+    /* width: 100vw; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.nav-container h1{
+    color: #aec3b0;
+    font-size: 3rem;
+}
+.links-container{
+    /* width: 50vw; */
+    display: flex;
+    color: #eff6e0;
+}
+ul, li{
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+.main-header{
+    background-color: #01161e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 850px;
+    text-shadow: 0px 5px 10px #01161e;
+    background: url(IMAGES/headerimage2.jpg);
+    background-size: cover;
+}
+.main-header h1{
+    color: #598392;
+    font-size: 15vh;
+    /* margin-top: 125px; */
+}
+.main-header p{
+    color: #aec3b0;
+    margin-left: 10px;
+}
+.content-head{
+    width: 100%;
+    /* height: 500px; */
+    /* background-repeat: no-repeat; */
+    padding: 140px;
+    height: 68%;
+    text-align: center;
+    background: #01161ec4;
+    /* background-image: url(IMAGES/headerimage2.jpg); */
+    /* background-color: #00bbff; */
+    background-size: cover;
+}
+/* .fader{
+    height: 520px;
+    width: 100vw;
+    background: linear-gradient(to top, black, white);
+} */
+.image-head{
+    width: 50%;
+    /* padding: 30px; */
+}
+.image-head img{
+    width: 100%;
+}
+.head-buttons-container{
+    margin-top: 80px;
+    margin-left: 10px;
+}
+.head-buttons-container button{
+    padding: 10px 20px ;
+    margin-left: 10px;
+    background-color: #aec3b0;
+    border: none;
+    color: #01161e;
+    font-family: made tommy;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.head-buttons-container button:hover{
+    transform: scale(1.05);
+    background-color: hsl(126, 12%, 67%);
+    box-shadow: 0px 0px 100px #aec3b0a8;
+}
+.aboutuscontainer{
+    background-image: url(IMAGES/aboutus\ png\ again.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: initial; */
+}
+.about-us{
+    background-color: #eff6e0ee;
+    box-shadow: 0px 0px 50px #00000075;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    
+}
+.our-programs, .ourmissions, .joinus{
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+    padding: 240px;
+    /* opacity: 1 !important; */
+}
+.about-us{
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+    padding: 180px;
+    /* opacity: 1 !important; */
+}
+.about-us, .our-programs, .ourmissions, .joinus, h1{
+    font-size: 7rem;
+    /* margin-top: 50px; */
+}
+.about-us, .our-programs, .ourmissions, .joinus, p{
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+.ourprogramscontainer{
+    background-color: #aec3b0e7; 
+    /* margin-bottom: 50px;    */
+    padding-bottom: 230px;
+}
+.joinuscontainer{
+    background-color: #aec3b0d3;
+}
+.our-programs{
+    padding-bottom: 100px;
+    /* background-color: #eff6e0; */
+}
+.cards-container{
+    display: flex;
+    margin: 0 auto;
+    width: 60vw;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-bottom: 40px; */
+}
+.card{
+    background-color: #eff6e0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 27%;
+    overflow: hidden;
+}
+.card img{
+    border: 2px solid black;
+    width: 98%;
+    border-radius: 20px;
+    margin-bottom: 0px;
+
+}
+.card p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+.card h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.card button{
+    background-color: #01161e;
+    width: 98%;
+    color: #eff6e0;
+    font-family: made tommy;
+    font-size: 1rem;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.card button:hover{
+    transform: scale(1.02);
+}
+.joinus-check-btn, .joinus-started-btn{
+    padding: 10px 20px ;
+    margin-left: 10px;
+    background-color: #eff6e0;
+    border: none;
+    color: #01161e;
+    font-family: made tommy;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-top: 30px;
+    /* border: 2px solid black; */
+}
+
+.section1{
+    background: url(IMAGES/programes.jpg);
+    background-size: cover;
+}
+.section2{
+    background: url(IMAGES/handshake.jpeg);
+    background-size: cover;
+}
+.copyrightsection{
+    display: flex;
+    background-color: #111111;
+    color: #aec3b0;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyrightsection p{
+    padding: 10px;
+    margin: 0;
+}
